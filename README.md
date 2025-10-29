@@ -1,33 +1,32 @@
 # Finance Manager App
 
-A secure, full-stack web application designed to help users effectively track and manage their personal financial data. This project showcases proficiency in modern full-stack architecture, secure API design, and dynamic frontend development.
+A secure, full-stack personal finance application designed to help users efficiently track and manage their financial data. This project demonstrates proficiency in building robust REST APIs and modern component-based architecture.
 
 ---
 
-## 🚀 Key Features
+## ✨ Key Features
 
-* *Secure User Authentication:* Implements *JWT (JSON Web Token) Authentication* with email verification for secure account registration and access control.
-* *RESTful API:* Developed a clean, scalable *REST API* using Spring Boot to handle all CRUD (Create, Read, Update, Delete) operations.
-* *Automated Reminders:* Features a *Spring Boot scheduled task* to automatically send daily email reminders to users, promoting financial discipline.
-* *Dynamic UI:* The *React* frontend allows users to *dynamically display and filter* their financial data in real-time.
+* *Secure Authentication:* Implemented *JWT (JSON Web Token) Authentication* for secure, stateless user access across API endpoints.
+* *Data Management API:* Robust *REST API* built with *Spring Boot* handles all CRUD operations (Create, Read, Update, Delete) for financial records.
+* *Automation:* Configured a *Spring Boot scheduled task* to send automated daily email reminders to users.
+* *Dynamic UI:* Responsive and dynamic user interface developed using *React*.
 
 ---
 
 ## 🛠 Tech Stack
 
-This application is built on a standard modern full-stack architecture.
-
-### Backend (Java)
+### Backend
 
 * *Framework:* *Spring Boot*
+* *Language:* Java
 * *Database:* *MySQL*
 * *Build Tool:* *Maven*
-* *Security:* Spring Security, JWT
-* *Other:* Java EE (Servlets, JSP), JDBC
+* *Security:* JWT, Spring Security
 
-### Frontend (Web)
+### Frontend
 
 * *Library:* *React*
+* *Build Tool:* *Vite*
 * *Language:* JavaScript
 * *Styling:* HTML, CSS, Bootstrap
 
@@ -35,36 +34,30 @@ This application is built on a standard modern full-stack architecture.
 
 ## 💻 Getting Started
 
-Follow these instructions to set up and run the project locally.
+Follow these steps to set up and run the application locally.
 
 ### Prerequisites
 
-Ensure you have the following installed:
-
-* *Java Development Kit (JDK) 17+*
-* *Node.js & npm* (or yarn)
-* *A running instance of MySQL*
-* *Maven*
-* *Git* (for cloning the repository)
+* Java Development Kit (JDK 17+)
+* Node.js & npm
+* A running instance of MySQL
+* Maven
+* Git (for cloning)
 
 ### 1. Backend Setup
 
 1.  Clone the repository and navigate to the backend folder:
     bash
-    git clone [Your-Repo-URL]
-    cd financemanager/backend
+    git clone [https://github.com/mohitmeena25/finance-manager.git]
+    cd finance-manager/backend
     
-2.  Update the database connection details in the appropriate configuration file (application.properties or application.yml).
-3.  Build the project using Maven:
+2.  Update your MySQL connection details (URL, username, password) in the appropriate configuration file (application.properties or application.yml).
+3.  Build and run the application:
     bash
     mvn clean install
+    java -jar target/backend-app-name.jar 
+    # The backend runs on port 8081
     
-4.  Run the application from your IDE or the command line:
-    bash
-    java -jar target/backend-application-name.jar 
-    # Replace with the actual generated .jar file name
-    
-    The backend API will start on http://localhost:8080.
 
 ### 2. Frontend Setup
 
@@ -76,18 +69,16 @@ Ensure you have the following installed:
     bash
     npm install
     
-3.  Start the frontend development server:
+3.  Start the development server:
     bash
-    npm start
+    npm run dev 
+    # Vite typically starts on port 5173
     
-    The application will open in your browser at http://localhost:3000 (or another available port).
+    The application will open in your browser.
 
 ---
 
 ## 📞 Contact
 
-For any questions or professional inquiries about this project:
-
 * *LinkedIn:* [linkedin.com/in/mohitmeena252](https://linkedin.com/in/mohitmeena252)
 * *Email:* mm6579327@gmail.com
-*
