@@ -1,0 +1,124 @@
+########################################
+# 🌍 GENERAL SETTINGS
+########################################
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Environment files (do not upload secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+########################################
+# ⚛ FRONTEND (React + Vite)
+########################################
+# Node dependencies
+/frontend/node_modules/
+node_modules/
+
+# Build outputs
+/frontend/dist/
+dist/
+
+# Cache
+.vite/
+frontend/.vite/
+
+# Test coverage
+coverage/
+*.lcov
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files
+/frontend/.env
+
+########################################
+# 🧱 BACKEND (Spring Boot / Java)
+########################################
+# Maven build output
+target/
+
+# Keep Maven Wrapper (important!)
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+mvnw
+mvnw.cmd
+
+# Gradle build output
+build/
+.gradle/
+out/
+
+# Compiled bytecode
+*.class
+*.jar
+*.war
+*.ear
+
+# Application logs
+*.log
+
+# Spring Boot temporary files
+.springBeans
+bin/
+
+########################################
+# 💻 IDEs & EDITORS
+########################################
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse / STS
+.project
+.classpath
+.factorypath
+.settings/
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+########################################
+# 🧪 TEST / REPORT OUTPUTS
+########################################
+/test-output/
+/reports/
+/surefire-reports/
+
+########################################
+# 🗂 PACKAGE MANAGER LOCK FILES (optional)
+########################################
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+########################################
+# 🧰 MISC
+########################################
+# MacOS icon
+Icon?
+
+# Backup files
+*.orig
+*.rej
